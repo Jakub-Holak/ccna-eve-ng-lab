@@ -26,17 +26,17 @@ Topologia
 					     Internet
 						|
 			   Gi0/0-----------------------------------Gi0/0
-		            R1  				    R2
-		           Gi0/1  				   Gi0/1          
-		             |				             |
-			   Gi0/0 				   Gi0/0	              
-	 	------Gi0/2 SW1				            SW2 Gi0/2------
-                |	   Gi0/1		     		   Gi0/1          |
-	       VPC6	     |	                                     |           VPC8
-			     -------------Gi0/0 SW3 Gi0/1-------------
-					       Gi0/2
-						 |
-						VPC7
+                 R1  				                     R2
+               Gi0/1  				                   Gi0/1          
+                  |				                         |
+			   Gi0/0 				                   Gi0/0	              
+    ------Gi0/2 SW1				                        SW2 Gi0/2------
+    |	   Gi0/1		     		                   Gi0/1          |
+   VPC6	     |	                                         |           VPC8
+             -------------Gi0/0 SW3 Gi0/1-----------------
+					          Gi0/2
+                                 |
+						        VPC7
 ```	
 Trójkąt STP: SW1->SW3<-SW2
 (redundancja ścieżki przez SW3 wymusza STP)
